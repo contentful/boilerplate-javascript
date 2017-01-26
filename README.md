@@ -1,5 +1,5 @@
 # boilerplate-javascript
-Boilerplate project for getting started project using javascript with Contentful
+Boilerplate project for getting started using javascript with Contentful
 
 ### Prerequisites 
 
