@@ -7,13 +7,13 @@ var client = contentful.createClient({
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
   accessToken: '0b7f6x59a0'
 })
-console.log('Fetching entries ...')
+console.log('\x1b[32mFetching entries ...')
 client.getEntries()
   .then((response) => {
-    console.log('done.\n')
+    console.log('\x1b[32mdone.\n')
     console.log(response.items[0])
   })
   .catch((error) => {
-    console.log('error occured')
+    console.log('\x1b[31merror occured')
     console.log(error)
   })
