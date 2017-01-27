@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "prestart": "npm install"
+    "prestart": "echo installing dependencies ... && npm install && echo done."
   },
   "repository": {
     "type": "git",
