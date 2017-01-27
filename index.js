@@ -10,8 +10,9 @@ var client = contentful.createClient({
 console.log('\x1b[32m Fetching entries ... \x1b[32m')
 client.getEntries()
   .then((response) => {
-    console.log('\x1b[32m Here are the first 100 entry IDs of your space . \x1b[32m \n')
-    console.log(response.items.map((item) => '\t> ' + item.sys.id).join('\n'))
+    console.log('\x1b[32m Here are the first 100 entry IDs of your space .\n')
+    console.log(response.items.map((item) => '\x1b[32m \t> ' + item.sys.id).join('\n'))
+    console.log('\n \x1b[32m Want to go further? Feel free to check out this guide: \x1b[34m\033[4mhttps://www.contentful.com/developers/docs/javascript/tutorials/using-js-cda-sdk/')
   })
   .catch((error) => {
     console.log('\x1b[31merror occured')
