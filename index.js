@@ -11,7 +11,7 @@ console.log('\x1b[32m Fetching entries ... \x1b[32m')
 client.getEntries()
   .then((response) => {
     console.log('\x1b[32m Here are the first 100 entry IDs of your space . \x1b[32m \n')
-    console.log(response.items.map((item) => '> ' + item.sys.id).join('\n'))
+    console.log(response.items.map((item) => '\t> ' + item.sys.id).join('\n'))
   })
   .catch((error) => {
     console.log('\x1b[31merror occured')
