@@ -1,11 +1,14 @@
 'user strict'
 var contentful = require('contentful')
 
+var SPACE_ID = 'developer_bookshelf'
+var ACCESS_TOKEN = '0b7f6x59a0'
+
 var client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
-  space: 'developer_bookshelf',
+  space: SPACE_ID,
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: '0b7f6x59a0'
+  accessToken: ACCESS_TOKEN
 })
 console.log('\x1b[32m Fetching entries ... \x1b[32m')
 client.getEntries()
