@@ -9,6 +9,8 @@ Boilerplate project for getting started using javascript with Contentful
 
 ### Start the project
 
+Change the value of `SPADE_ID` to your spaceid and `ACCESS_TOKEN` to your delivery token and run
+
 ```shell
 npm start
 ```
