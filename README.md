@@ -9,7 +9,13 @@ Boilerplate project for getting started using javascript with Contentful
 
 ### Start the project
 
-update the `index.js` file with your API credentials as follows:
+clone the project using the following command
+
+```
+git clone https://github.com/contentful/boilerplate-javascript.git
+```
+
+navigate to `boilerplate-javascript` directory and update the `index.js` file with your API credentials as follows:
 
 ```js
 var SPACE_ID = 'your_spaceId'
