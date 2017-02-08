@@ -1,4 +1,4 @@
-# boilerplate-javascript
+# Contentful Javascript boilerplate project
 
 Boilerplate project for getting started using javascript with Contentful
 
