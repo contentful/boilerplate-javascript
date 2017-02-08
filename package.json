@@ -12,7 +12,7 @@
     "url": "git+https://github.com/contentful/boilerplate-javascript.git"
   },
  "engines":{
-   "node": "<=4.7.2"
+   "node": ">=4.7.2"
   },
   "keywords": [
     "Contentful",
