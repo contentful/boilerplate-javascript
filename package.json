@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "prestart": "echo \"\\x1b[32m\\033[4mInstalling dependencies:\" && npm install && echo \"\\x1b[32mdone.\\033[0m\""
+    "prestart": "npm install",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contentful/boilerplate-javascript.git"
   },
- "engines":{
-   "node": ">=4.7.2"
+  "engines": {
+    "node": ">=4.7.2"
   },
   "keywords": [
     "Contentful",
@@ -26,6 +27,11 @@
   },
   "homepage": "https://github.com/contentful/boilerplate-javascript#readme",
   "dependencies": {
-    "contentful": "^3.8.0"
+    "chalk": "^1.1.3",
+    "cli-table2": "^0.2.0",
+    "contentful": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
