@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "prestart": "npm install",
     "dev": "nodemon index.js"
   },
   "repository": {
