@@ -19,8 +19,8 @@ git clone https://github.com/contentful/boilerplate-javascript.git
 Open the _boilerplate-javascript_ directory and update the _index.js_ file with your API credentials as follows:
 
 ```js
-var SPACE_ID = '<space_id>'
-var ACCESS_TOKEN = '<access_token>'
+const SPACE_ID = '<space_id>'
+const ACCESS_TOKEN = '<access_token>'
 ```
 
 ### :three: Install dependencies and start it:
