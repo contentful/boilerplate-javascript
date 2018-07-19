@@ -6,12 +6,16 @@ const Table = require('cli-table2')
 
 const SPACE_ID = 'developer_bookshelf'
 const ACCESS_TOKEN = '0b7f6x59a0'
+const ENVIRONMENT = 'master'
 
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
   space: SPACE_ID,
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: ACCESS_TOKEN
+  accessToken: ACCESS_TOKEN,
+  // This is the specified envrionment that the accessToken has access to. To create additional environments check out the docs
+  // https://www.contentful.com/developers/docs/references/content-management-api/#/reference/environments/environment-collection/create-an-environment/console/js
+  environment: ENVIRONMENT
 })
 
 console.log(chalk.green.bold('\nWelcome to the Contentful JS Boilerplate\n'))
