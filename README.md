@@ -21,6 +21,7 @@ Open the _boilerplate-javascript_ directory and update the _index.js_ file with 
 ```js
 var SPACE_ID = '<space_id>'
 var ACCESS_TOKEN = '<access_token>'
+var ENVIRONMENT = '<environment>'
 ```
 
 ### :three: Install dependencies and start it:
