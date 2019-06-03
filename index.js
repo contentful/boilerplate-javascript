@@ -4,14 +4,15 @@ const contentful = require('contentful')
 const chalk = require('chalk')
 const Table = require('cli-table2')
 
-const SPACE_ID = 'developer_bookshelf'
-const ACCESS_TOKEN = '0b7f6x59a0'
+const SPACE_ID = 'bc9jwlhmdf0q'
+const ACCESS_TOKEN = '9e1a1b204ddb6935492f9e90d7d9ed22c70c56a5a866c97b17e8a722e59a17f1'
 
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
   space: SPACE_ID,
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: ACCESS_TOKEN
+  accessToken: ACCESS_TOKEN,
+  environment: 'master'
 })
 
 console.log(chalk.green.bold('\nWelcome to the Contentful JS Boilerplate\n'))
@@ -79,7 +80,10 @@ function displayEntries (contentTypes) {
 // Load all Content Types in your space from Contentful
 function fetchContentTypes () {
   return client.getContentTypes()
-  .then((response) => response.items)
+  .then((response) => {
+    console.log(response.items[0].sys.environment, '*' * 10)
+    // return response.items
+  })
   .catch((error) => {
     console.log(chalk.red('\nError occurred while fetching Content Types:'))
     console.error(error)
